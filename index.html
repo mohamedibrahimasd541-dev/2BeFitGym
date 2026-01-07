@@ -147,7 +147,7 @@ function generateQR() {
     const qrDiv = document.getElementById("qrcode");
     qrDiv.innerHTML = "";
 
-    const pageURL = `https://example.com/card.html?name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}`;
+    const pageURL = `https://2-be-fit-gym.vercel.app/card.html?name=${encodeURIComponent(name)}&phone=${encodeURIComponent(phone)}`;
 
     currentQRCode = new QRCode(qrDiv, {
         text: pageURL,
@@ -178,3 +178,4 @@ document.getElementById("downloadBtn").addEventListener("click", function() {
 
 </body>
 </html>
+
