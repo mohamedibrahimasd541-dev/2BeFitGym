@@ -131,7 +131,7 @@ function generateQR() {
 
     // === التحقق من الاسم الثلاثي ===
     const nameParts = name.split(/\s+/); // تقسيم الاسم على حسب الفراغ
-    if (nameParts.length !== 3) {
+    if (nameParts.length !== 2) {
         alert("الاسم يجب أن يكون ثلاثي (اسم - اسم أبي - اسم عائلة)");
         return;
     }
@@ -178,4 +178,5 @@ document.getElementById("downloadBtn").addEventListener("click", function() {
 
 </body>
 </html>
+
 
